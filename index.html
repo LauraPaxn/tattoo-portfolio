@@ -1,6 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded PDF</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2rem;
+        }
+        iframe {
+            display: block;
+            margin: 20px auto;
+            width: 90%;
+            height: 80vh;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
 <body>
-    <iframe src="https://drive.google.com/file/d/1FrPxrCeTutQD15hzTcPCw2JXnDEadMhl/preview" width="100%" height="100%" style="border: none;"></iframe>
+    <h1>Embedded PDF</h1>
+    <iframe src="https://drive.google.com/file/d/FILE_ID/preview"></iframe>
 </body>
 </html>
