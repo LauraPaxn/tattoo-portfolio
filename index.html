@@ -1,34 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embedded PDF</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        h1 {
-            text-align: center;
-            margin: 20px 0;
-            font-size: 2rem;
-        }
-        iframe {
-            display: block;
-            margin: 20px auto;
-            width: 90%;
-            height: 80vh;
-            border: 1px solid #ccc;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-    </style>
-</head>
-<body>
-    <h1>Embedded PDF</h1>
-    <iframe src="https://drive.google.com/file/d/FILE_ID/preview"></iframe>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Laura Pachon - Tattoo Artist</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>Laura Pachon</h1>
+                <p>Tattoo Artist in Berlin</p>
+                <!-- <nav>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </nav> -->
+            </div>
+        </header>
+
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <h2>Gallery</h2>
+                <div class="artwork-grid">
+                    <img src="img/1.jpg" alt="Tattoo Art 1" />
+                    <img src="img/3.jpg" alt="Tattoo Art 3" />
+                    <img src="img/4.jpg" alt="Tattoo Art 4" />
+                    <img src="img/2.jpg" alt="Tattoo Art 2" />
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>
+                    Hi, I'm Laura Pachon, a passionate tattoo artist based in
+                    Berlin. With 2 years of experience, I specialize in fine
+                    line. Each tattoo I create is a unique piece of art,
+                    tailored to my clients' vision and personality.
+                </p>
+                <p>
+                    Feel free to explore my gallery and reach out if you'd like
+                    to collaborate on your next tattoo!
+                </p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Book an Appointment</h2>
+                <form action="https://formspree.io/f/xpwqrkok" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required />
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="message">Message:</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        required
+                    ></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 Laura Pachon. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
 </html>
